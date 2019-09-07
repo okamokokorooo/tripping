@@ -1,0 +1,61 @@
+// Place all the styles related to the programs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home_view{
+  text-align:center;
+  font-size:14px;
+  .homeheader{
+    margin:30px;
+    h1{
+      font-size:20px;
+    }
+  }
+  .create_btn{
+    margin-top:20px;
+    a{
+      text-decoration: none;
+      color:black;
+    }
+  }
+  .main_view{
+    .program{
+      font-weight: bold;
+      border: solid 3px #000000;
+      width:200px;
+      margin:0 auto;
+      &__video{
+
+      }
+      &__title{
+      }
+    }
+    .actionbtn{
+      width:200px;
+      border-radius: 20px;
+      display:flex;
+      margin:0 auto;
+      margin-bottom:90px;
+      .showbtn{
+        a{
+          background:#6BCBF6;
+          border-radius: 20px;
+          text-decoration: none;
+          color:black;
+        }
+      }
+      .editbtn{
+        a{
+          text-decoration: none;
+          color:black;
+        }
+      }
+      .destroybtn{
+        a{
+          text-decoration: none;
+          color:black;
+        }
+      }
+    }
+  }
+}

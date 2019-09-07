@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @program.title
+%p
+  %b User:
+  = @program.user
+
+= link_to 'Edit', edit_program_path(@program)
+\|
+= link_to 'Back', programs_path

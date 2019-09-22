@@ -1,26 +1,34 @@
 class ProgramsController < ApplicationController
   before_action :set_program, only: [:show, :edit, :update, :destroy]
-
+  add_breadcrumb 'Home','http://localhost3000'
+  before_action :set_genre
   def index
-    @programs = Program.all
+    add_breadcrumb 'ブログ一覧'
+    @programs = @genre.programs
+    # binding.pry
   end
 
   def show
+    add_breadcrumb 'ブログ一覧'
+    add_breadcrumb '日記'
+    add_breadcrumb @program_title, :root_path
   end
 
   def new
-    @program = Program.new
+    @program = @genre.programs.new
   end
 
-  # GET /programs/1/edit
   def edit
   end
 
-  # POST /programs
-  # POST /programs.json
   def create
     @program = Program.create(program_params)
     # binding.pry
+  end
+
+  def search
+    @program = Program.search(genre_params)
+    render "index"
   end
 
   # PATCH/PUT /programs/1
@@ -49,12 +57,14 @@ class ProgramsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_program
-      @program = Program.find(params[:id])
-    end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def program_params
-      params.require(:program).permit(:title,:video,:text).merge(user_id: current_user.id)
+      params.require(:program).permit(:title,:video,:text, :genre_id).merge(user_id: current_user.id)
+    end
+
+    def set_genre
+      @genre = Genre.find(params[:genre_id])
+      Time.zone ='Tokyo'
+      # binding.pry
     end
 end

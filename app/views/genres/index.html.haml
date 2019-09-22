@@ -1,0 +1,12 @@
+.home_view
+  .home_header
+    = render_breadcrumbs separator: ' > ',class: "breadcrumbs"
+    .home_header__title
+      %h2 タイトル
+    .home_header__search
+  .main_view
+    .genres
+      - @genres.each do |genre|
+        .genre
+          .program__name
+            = link_to "#{genre.name}", genre_programs_path(genre.id)

@@ -1,21 +1,16 @@
 .home_view
   .home_header
-    %h1 
-    タイトル
-  .create_btn
-    = link_to '投稿する', new_program_path
+    = render_breadcrumbs separator: ' > ',class: "breadcrumbs"
+    .home_header__title
+      %h2 タイトル
+    .home_header__search
   .main_view
     .programs
       - @programs.each do |program|
         .program
           .program__video
-            = program.video
+            [動画]
+            #{program.video}
           .program__title
-            = program.title
-        .actionbtn
-          .showbtn
-            = link_to 'Show', program
-          .editbtn
-            = link_to 'Edit', edit_program_path(program)
-          .destroybtn
-            = link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' }
+            [タイトル]
+            #{program.title}

@@ -1,11 +1,11 @@
 %p#notice= notice
-
+= render_breadcrumbs separator: ' > '
 %p
   %b Title:
   = @program.title
 %p
   %b User:
-  = @program.user
+  = @program.text
 
 = link_to 'Edit', edit_program_path(@program)
 \|

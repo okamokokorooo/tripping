@@ -2,16 +2,27 @@ class ProgramsController < ApplicationController
   before_action :set_program, only: [:show, :edit, :update, :destroy]
   add_breadcrumb 'Home','http://localhost3000'
   before_action :set_genre
+  before_action :set_program, only: [:show]
+  impressionist :actions => [:show]
   def index
     add_breadcrumb 'ブログ一覧'
     @programs = @genre.programs
+    # @program = Program.new
+    # @program = Program.find(params[:id])
     # binding.pry
+    # @tweets = Tweet.includes(:user).page(params[:page]).per(5).order("created_at DESC")
   end
 
   def show
     add_breadcrumb 'ブログ一覧'
     add_breadcrumb '日記'
     add_breadcrumb @program_title, :root_path
+
+    @programs = @genre.programs
+    @program = Program.find(params[:id])
+    # binding.pry
+    # impressionist(@program, nil, unique: [session_hash])
+    # impressionist(@program, nil, unique: [session_hash])
   end
 
   def new
@@ -65,6 +76,10 @@ class ProgramsController < ApplicationController
     def set_genre
       @genre = Genre.find(params[:genre_id])
       Time.zone ='Tokyo'
+      # binding.pry
+    end
+    def set_program
+      @program = Program.find(params[:id])
       # binding.pry
     end
 end

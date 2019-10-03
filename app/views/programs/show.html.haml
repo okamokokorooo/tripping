@@ -1,12 +1,13 @@
-%p#notice= notice
-= render_breadcrumbs separator: ' > '
-%p
-  %b Title:
-  = @program.title
-%p
-  %b User:
-  = @program.text
 
-= link_to 'Edit', edit_program_path(@program)
-\|
-= link_to 'Back', programs_path
+.showing
+  .top_title
+    %P 「#{@program.title}」
+  .top_text
+    %p #{@program.text}
+  .top_pv
+    = fa_icon 'eye', class: 'icon'
+    = @program.impressionist_count
+
+  -# = link_to 'Edit', edit_program_path(@program)
+  -# \|
+  -# = link_to 'Back', programs_path

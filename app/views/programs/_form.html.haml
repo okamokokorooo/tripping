@@ -1,22 +1,22 @@
-= form_for @program ,:url => {:action => :create}do |f|
-  - if @program.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@program.errors.count, "error")} prohibited this program from being saved:"
-      %ul
-        - @program.errors.full_messages.each do |message|
-          %li= message
-  .field
-    =f.label :genre_id
-    = f.collection_select :genre_id, Genre.all, :id, :name, prompt: "--", class: 'input'
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :text
-    = f.text_field :text
-  .field
-    = f.label :video
-    = f.text_field :video
-  .actions
-    = f.submit '送信'
+.forming
+  = form_for @program ,:url => {:action => :create}do |f|
+    - if @program.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@program.errors.count, "error")} prohibited this program from being saved:"
+        %ul
+          - @program.errors.full_messages.each do |message|
+            %li= message
+    .field
+      = f.label :genre_id
+      = f.collection_select :genre_id, Genre.all, :id, :name, prompt: "--", class: 'input'
+    .field
+      = f.label :title
+      = f.text_field :title, class: "form-btn"
+    .field
+      = f.label :text
+      = f.text_area :text
+    .field
+      = f.label :video
+      = f.file_field :video, class: "video_box", id: "file"
+    = f.submit '投稿する', class: "action_btn"
 

@@ -1,0 +1,46 @@
+.creating{
+  text-align:center;
+  h1{
+  font-size: 30px;
+  }
+  .forming{
+    .field{
+      label{
+        display:flex;
+      }
+      .form-btn{
+        width:300px;
+        height:30px;
+      }
+      select{
+        width:300px;
+        height:30px;
+      }
+      textarea{
+        height:300px;
+        width:300px;
+      }
+      .video_box{
+        width:300px;
+        background-color:red;
+      }
+    }
+    .action_btn{
+      margin-top: 30px;
+      width:300px;
+      height:60px;
+      font-size:30px;
+      background: white;
+      border-radius:20px;
+    }
+  }
+}
+
+.created{
+  a{
+    text-decoration: none;
+  }
+  h2{
+    color:black;
+  }
+}

@@ -1,6 +1,6 @@
 class GenresController < ApplicationController
   # before_action :set_genre
-
+  # before_action :set_program
   # GET /genres
   # GET /genres.json
   def index
@@ -73,4 +73,8 @@ class GenresController < ApplicationController
     def genre_params
       params.require(:genre).permit(:name)
     end
+    
+    # def set_program
+    #   @program = Program.find(params[:id])
+    # end
 end

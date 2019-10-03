@@ -1,16 +1,22 @@
 .home_view
   .home_header
-    = render_breadcrumbs separator: ' > ',class: "breadcrumbs"
-    .home_header__title
-      %h2 タイトル
-    .home_header__search
+    .title
+      = link_to "TRIPPING", root_path
   .main_view
     .programs
       - @programs.each do |program|
         .program
           .program__video
-            [動画]
-            #{program.video}
+            = image_tag program.video.url, class: 'image_video' if program.video.present?
+          .no_image
+            = "NOIMAGE" unless program.video.present?
           .program__title
-            [タイトル]
-            #{program.title}
+            = link_to "#{program.title}","programs/#{program.id}"
+          .program__pv
+
+ 
+          
+            -# = @program.impressionist_count
+  .action
+    = link_to "投稿する", new_genre_program_path 
+    -# = link_to "詳細",  genre_program_path(@program.id)

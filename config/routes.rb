@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :comments
   devise_for :users, controllers: { sessions: "users/sessions", registrations: "users/registrations"}
   root 'genres#index'
-  resources :genres
+  resources :users
   resources :genres do
     resources :programs do
       resources :comments

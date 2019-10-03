@@ -1,12 +1,16 @@
 .home_view
   .home_header
     = render_breadcrumbs separator: ' > ',class: "breadcrumbs"
-    .home_header__title
-      %h2 タイトル
-    .home_header__search
+    .title
+      %h2 TRIPPING
+    .search
+    .logout
+      = link_to 'ログアウト', destroy_user_session_path, method: :delete
+    .user_page
+      = link_to 'user', users_path
   .main_view
     .genres
       - @genres.each do |genre|
         .genre
-          .program__name
+          .genre__name
             = link_to "#{genre.name}", genre_programs_path(genre.id)

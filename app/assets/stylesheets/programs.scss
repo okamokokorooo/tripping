@@ -150,4 +150,31 @@
       color: black;
     }
   }
+  .showing{
+    margin-top:50px;
+    border: 1px solid gray;
+    padding:10px;
+    min-height: 100%;
+    margin:0 auto;
+    // min-width:50%;
+    // position:center;
+    width:60%;
+    .top_title{
+      border: 1px solid gray;
+      p{
+        font-size: 50px;
+      }
+    }
+    .top_text{
+      border: 1px solid gray;
+      p{
+        text-align:left;
+        display: block;
+        min-height:300px;
+        font-size: 30px;
+      }
+    }
+    .top_pv{
+    }
+  }
 }

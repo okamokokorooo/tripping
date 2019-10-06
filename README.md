@@ -23,20 +23,31 @@ Things you may want to cover:
 
 * ...
 
-##観光投稿サイト
-###about
-####観光地やグルメなどの感想を共有できるサイトです
+Name
+====
 
-###DB
-####mysqlで作りました
+Overview
 
-###ER図
+## Description
 
-###本アプリの機能について
-####ログイン機能
-####投稿機能
-####画像投稿機能
-####いいね機能
-####投稿物のPV機能
+## Demo
+
+## VS. 
+
+## Requirement
+
+## Usage
+
+## Install
+
+## Contribution
+
+## Licence
+
+[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+
+## Author
+
+[tcnksm](https://github.com/tcnksm)
 
 

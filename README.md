@@ -33,12 +33,20 @@ Overview
 
 ### about
 #### 観光地やグルメ情報などを呟くことができるサイト
+
 ### language
 #### view: haml/scsss
 #### server_side: RubyOnRails
 
+## Function
+### ユーザーログイン機能
+### 投稿機能
+### 画像投稿機能
+### いいね機能
+### PV数表示機能
+
 ## Author
 
-[tcnksm](https://github.com/okamokokorooo)
+[okamokokorooo](https://github.com/okamokokorooo)
 
 

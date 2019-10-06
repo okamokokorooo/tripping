@@ -24,30 +24,21 @@ Things you may want to cover:
 * ...
 
 Name
+# 観光つぶやきサイト「TRIPPING」
 ====
 
 Overview
 
 ## Description
 
-## Demo
-
-## VS. 
-
-## Requirement
-
-## Usage
-
-## Install
-
-## Contribution
-
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+### about
+#### 観光地やグルメ情報などを呟くことができるサイト
+### language
+#### view: haml/scsss
+#### server_side: RubyOnRails
 
 ## Author
 
-[tcnksm](https://github.com/tcnksm)
+[tcnksm](https://github.com/okamokokorooo)
 
 

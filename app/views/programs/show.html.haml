@@ -4,6 +4,10 @@
     .title
       = link_to "TRIPPING", root_path
   .showing
+    .top__video
+      = image_tag @program.video.url, class: 'image_video' if @program.video.present?
+    .no_image
+      = "NOIMAGE" unless @program.video.present?
     .top_title
       %P 「#{@program.title}」
     .top_text
@@ -11,5 +15,6 @@
     .top_pv
       = fa_icon 'eye', class: 'icon'
       = @program.impressionist_count
+    = render 'likes/like'
   -# \|
   -# = link_to 'Back', programs_path

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :users
   resources :genres do
     resources :programs do
-      resources :likes
+      resources :likes, only: [:create, :destroy]
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

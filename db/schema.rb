@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_04_052552) do
+ActiveRecord::Schema.define(version: 2019_10_05_094012) do
 
   create_table "genres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 2019_10_04_052552) do
     t.datetime "updated_at", null: false
     t.bigint "genre_id"
     t.bigint "user_id"
+    t.integer "likes_count"
     t.index ["genre_id"], name: "index_programs_on_genre_id"
     t.index ["user_id"], name: "index_programs_on_user_id"
   end

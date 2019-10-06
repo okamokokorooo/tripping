@@ -1,2 +1,7 @@
-.user_info
-  #{current_user.name}
+.home_view
+  .home_header
+    = render_breadcrumbs separator: ' > ',class: "breadcrumbs"
+    .title
+      %h2 TRIPPING
+  .user_info
+  %P 名前：「#{current_user.name}」

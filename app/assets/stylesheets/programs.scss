@@ -152,13 +152,18 @@
   }
   .showing{
     margin-top:50px;
-    border: 1px solid gray;
+    // border: 1px solid gray;
     padding:10px;
     min-height: 100%;
     margin:0 auto;
     // min-width:50%;
     // position:center;
     width:60%;
+    .top_video{
+      .image_video{
+        height:800px;
+      }
+    }
     .top_title{
       border: 1px solid gray;
       p{

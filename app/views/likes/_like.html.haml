@@ -6,10 +6,10 @@
       %span
         = @program.likes_count
   - else
-    = button_to genre_program_likes_path(program_id: @program.id, method: :post), id: "like-create", remote: true do
+    =  button_to genre_program_likes_path(program_id: @program.id, method: :post), id: "like-create", remote: true do
       = fa_icon 'heart'
       %span
-        =@program.likes_count
+        = @program.likes_count
 - else
   = image_tag("icon_heart.svg")
   %span

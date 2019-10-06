@@ -32,18 +32,18 @@ Overview
 ## Description
 
 ### about
-#### 観光地やグルメ情報などを呟くことができるサイト
+* 観光地やグルメ情報などを呟くことができるサイトです。
 
 ### language
-#### view: haml/scsss
-#### server_side: RubyOnRails
+* view: haml/scsss
+* server_side: RubyOnRails
 
 ## Function
-### ユーザーログイン機能
-### 投稿機能
-### 画像投稿機能
-### いいね機能
-### PV数表示機能
+* ユーザーログイン機能
+* 投稿機能
+* 画像投稿機能
+* いいね機能
+* PV数表示機能
 
 ## Author
 

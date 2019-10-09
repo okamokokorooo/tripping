@@ -2,7 +2,7 @@
   .home_header
     = render_breadcrumbs separator: ' > ',class: "breadcrumbs"
     .title
-      %h2 TRIPPING
+      = link_to "TRIPPING", root_path
     .search
     .logout
       = link_to 'ログアウト', destroy_user_session_path, method: :delete

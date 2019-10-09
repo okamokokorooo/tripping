@@ -12,7 +12,9 @@
             = "NOIMAGE" unless program.video.present?
           .program__title
             = link_to "#{program.title}","programs/#{program.id}"
-          .program__pv
+          .program__pv  
+            %p PV数:   #{program.impressionist_count}
+
   .action
     = link_to "投稿する", new_genre_program_path 
     -# = link_to "詳細",  genre_program_path(@program.id)

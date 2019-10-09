@@ -1,16 +1,12 @@
-- if user_signed_in?
-  - if @program.like_user(current_user.id)
-    = button_to genre_program_like_path(program_id: @program.id),method: :delete, id: "like-destroy", remote: true do
-      = fa_icon 'heart'
-      %p いいね済み
-      %span
-        = @program.likes_count
-  - else
-    =  button_to genre_program_likes_path(program_id: @program.id, method: :post), id: "like-create", remote: true do
-      = fa_icon 'heart'
-      %span
-        = @program.likes_count
+
+- if @program.like_user(current_user.id)
+  = button_to genre_program_like_path(program_id: @program.id),method: :delete, id: "like-destroy", remote: true do
+    = fa_icon 'heart'
+    %p いいね済み
+    %span
+      = @program.likes_count
 - else
-  = image_tag("icon_heart.svg")
-  %span
-    = program.likes_count
+  =  button_to genre_program_likes_path(program_id: @program.id),method: :post, id: "like-create", remote: true do
+    = fa_icon 'heart'
+    %span
+      = @program.likes_count

@@ -20,7 +20,7 @@ Overview
 * 投稿機能
 * 画像投稿機能
 * PV数表示機能
-![](https://user-images.githubusercontent.com/53133463/66711580-7d6cc300-edc9-11e9-9786-bab3f64a525a.png)
+![画面](https://user-images.githubusercontent.com/53133463/66711580-7d6cc300-edc9-11e9-9786-bab3f64a525a.png)
 * いいね機能
 
 ## Author

@@ -1,29 +1,4 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-Name
 # 観光つぶやきサイト「TRIPPING」
 ![ホーム画面](https://user-images.githubusercontent.com/53133463/66711452-07fff300-edc7-11e9-8bd5-cd87b6d3d4d3.png)!
 ====
@@ -41,6 +16,7 @@ Overview
 
 ## Function
 * ユーザーログイン機能
+!(https://user-images.githubusercontent.com/53133463/66711495-05ea6400-edc8-11e9-8283-3e4b85945969.png)
 * 投稿機能
 * 画像投稿機能
 * いいね機能

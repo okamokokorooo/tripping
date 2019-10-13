@@ -32,6 +32,7 @@ Overview
 ## Description
 
 ### about
+(https://user-images.githubusercontent.com/53133463/66711452-07fff300-edc7-11e9-8bd5-cd87b6d3d4d3.png)
 * 観光地やグルメ情報などを呟くことができるサイトです。
 
 ### language

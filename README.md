@@ -25,7 +25,7 @@ Overview
 ![画面](https://user-images.githubusercontent.com/53133463/66711612-0e439e80-edca-11e9-9f08-531cc926481e.png)
 
 ## infrastructure
-*　DB：mysql2
+* DB：mysql2
 * deploy:heroku
 * ER図
 ![画面](https://user-images.githubusercontent.com/53133463/66734862-b0818600-ee9f-11e9-87a3-614519717aa7.png)

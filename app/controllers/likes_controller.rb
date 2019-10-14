@@ -4,7 +4,6 @@ class LikesController < ApplicationController
     @like = Like.create(user_id: current_user.id, program_id: params[:program_id])
     @likes = Like.where(program_id: params[:program_id])
     @programs = Program.all
-    @program = Program.new
     # binding.pry
   end
 
@@ -12,7 +11,6 @@ class LikesController < ApplicationController
     @like = Like.find_by(user_id: current_user.id, program_id: params[:program_id])
     @like.destroy
     @likes = Like.where(program_id: params[:program_id])
-    @programs = Program.all
     # binding.pry
   end
 

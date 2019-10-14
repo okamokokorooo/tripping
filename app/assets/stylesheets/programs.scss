@@ -16,12 +16,18 @@
       margin: 0 auto;
       a{
         font-size:50px;
+        font-family:cursive;
         background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
         background: linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
         mix-blend-mode: screen;
         color: #ffffff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+      }
+    }
+    .genre_name{
+      p{
+        text-align:center;
       }
     }
     .search{
@@ -150,6 +156,11 @@
 
   .action{
     margin-top:30px;
+    background:red;
+    max-width:30%;  
+    margin:0 auto;
+    margin-bottom: 30px;
+    border-radius:30px;
     a{
       text-decoration: none;
       font-size:30px;

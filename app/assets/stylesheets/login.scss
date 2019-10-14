@@ -3,6 +3,16 @@
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url(login.jpg);
   background-size:  cover;
   height:100vh;
+  h1{
+    font-size:100px;
+    font-family:cursive;
+    background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    background: linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    mix-blend-mode: screen;
+    // color: #e5033e, #b701b5, #4a02c2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   h2{
     padding-top:30px;
     font-size:30px;

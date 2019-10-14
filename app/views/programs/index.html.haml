@@ -2,6 +2,8 @@
   .home_header
     .title
       = link_to "TRIPPING", root_path
+    .genre_name
+      %P #{@genre.name}
   .main_view
     .programs
       - @programs.each do |program|
@@ -12,9 +14,12 @@
             = "NOIMAGE" unless program.video.present?
           .program__title
             = link_to "#{program.title}","programs/#{program.id}"
+          .no_title
+            = link_to "NoTitle","programs/#{program.id}" unless program.title.present?
           .program__pv  
             %p PV数:   #{program.impressionist_count}
 
   .action
+    = fa_icon 'plus', class: 'icon'
     = link_to "投稿する", new_genre_program_path 
     -# = link_to "詳細",  genre_program_path(@program.id)

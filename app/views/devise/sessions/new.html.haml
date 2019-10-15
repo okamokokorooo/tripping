@@ -1,21 +1,21 @@
 .login_view
   %h1 TRIPPING
   %h2 ログイン
+  .new_user
+    = link_to "新規登録の方はこちら", new_registration_path(resource_name)
+    = fa_icon 'mouse-pointer', class: 'icon'
   .forming
     = form_for(resource, as: resource_name, url: session_path(resource_name),class:"forming") do |f|
       .field
-        = f.label "メールアドレス"
         %br/
-        = f.email_field :email, autofocus: true, autocomplete: "email",class:"form_space"
+        = f.email_field :email, autofocus: true, autocomplete: "email",class:"form_space",placeholder: "mail"
       .field
-        = f.label "パスワード"
         %br/
-        = f.password_field :password, autocomplete: "current-password",class:"form_space"
-      - if devise_mapping.rememberable?
+        = f.password_field :password, autocomplete: "current-password",class:"form_space",placeholder: "パスワード"
         .field
           = f.check_box :remember_me
           = f.label :remember_me
         = f.submit "ログイン",class:"login_btn"
-        = link_to "新規登録の方はこちら",  new_registration_path(resource_name)
+
 
       

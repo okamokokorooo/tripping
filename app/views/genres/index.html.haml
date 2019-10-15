@@ -2,10 +2,11 @@
   .home_header
     = render_breadcrumbs separator: ' > ',class: "breadcrumbs"
     .title
-      = link_to "TRIPPING", root_path
-    .search
+      = link_to "TRIPPING", root_path, id:"titling"
     .logout
       = link_to 'ログアウト', destroy_user_session_path, method: :delete
+    .logoutbtn
+
     .user_page
       = link_to users_path do
         = fa_icon 'user', class: 'icon'

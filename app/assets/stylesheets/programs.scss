@@ -34,6 +34,7 @@
 
     }
     .logout{
+      // display:none;
       background-color: #b701b5;
       margin:20px;
       border-radius:10px;
@@ -156,11 +157,12 @@
 
   .action{
     margin-top:30px;
-    background:red;
     max-width:30%;  
     margin:0 auto;
     margin-bottom: 30px;
     border-radius:30px;
+    border: 1px solid gray;
+
     a{
       text-decoration: none;
       font-size:30px;

@@ -20,6 +20,9 @@ class ProgramsController < ApplicationController
 
     @programs = @genre.programs
     @program = Program.find(params[:id])
+    def like_user(user_id)
+      likes.find_by(user_id: user_id)
+    end
     # binding.pry
     # impressionist(@program, nil, unique: [session_hash])
     # impressionist(@program, nil, unique: [session_hash])

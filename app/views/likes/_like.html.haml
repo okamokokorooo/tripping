@@ -2,8 +2,8 @@
 .liking
 - if @program.like_user(current_user.id)
   = button_to genre_program_like_path(program_id: @program.id),method: :delete, id: "like-destroy", remote: true do
+    %span いいね解除
     = fa_icon 'heart'
-    %p いいね済み
     %span
       = @program.likes_count
 - else

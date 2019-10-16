@@ -7,16 +7,17 @@
           - @program.errors.full_messages.each do |message|
             %li= message
     .field
-      = f.label :genre_id
-      = f.collection_select :genre_id, Genre.all, :id, :name, prompt: "--", class: 'input'
+      .field_genre step1 投稿ジャンルを選んでね！
+      = f.collection_select :genre_id, Genre.all, :id, :name, prompt: "--", class: 'input', id:"selection"
     .field
-      = f.label :title
-      = f.text_field :title, class: "form-btn"
+      .field_title step2 投稿タイトルを書こう！
+      = f.text_field :title, class: "form-title",id:"title"
     .field
-      = f.label :text
-      = f.text_area :text
+      .field_text  step3 自由に感想を書こう！
+      = f.text_area :text,id:"text"
     .field
-      = f.label :video
+      .field_video step4 写真を載せるとgood!
       = f.file_field :video, class: "video_box", id: "file"
+    .go step5 投稿ボタンを押して完了
     = f.submit '投稿する', class: "action_btn"
 

@@ -1,7 +1,8 @@
 .creating{
   text-align:center;
   a{
-    font-size:30px;
+    font-size:50px;
+    font-family:cursive;
     background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
     background: linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
     mix-blend-mode: screen;
@@ -32,6 +33,9 @@
         width:300px;
         display:none;
       }
+      p{
+        color:g
+      }
     }
     .action_btn{
       display:none;
@@ -41,6 +45,10 @@
       font-size:30px;
       background: white;
       border-radius:20px;
+    }
+    p{
+      font-size:20px;
+      color:#b701b5;
     }
   }
 }

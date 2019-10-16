@@ -14,4 +14,17 @@ $(function(){
   $(".action_btn").submit(function(){
     console.log("ありがとう");
   })
+  $("#name").keydown(function(){
+    $("#e_mail").fadeIn();
+  })
+  $("#e_mail").keydown(function(){
+    $("#pass").fadeIn();
+  })
+  $("#pass").keydown(function(){
+    $("#pass_conf").fadeIn();
+  })
+  $("#pass_conf").keydown(function(){
+    $(".login_btn").fadeIn();
+  })
 })
+

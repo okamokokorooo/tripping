@@ -19,7 +19,7 @@
   }
   .new_user{
     height:30px;
-
+    margin-top:50px;
     a{
       height:50px;
       background-color:white;
@@ -45,6 +45,7 @@
         min-width:100%;
         min-height:30px;
         border-radius:20px;
+        margin-bottom:50px;
         // display:flex;
       }
       .form_mail{
@@ -52,7 +53,9 @@
         min-width:100%;
         min-height:30px;
         border-radius:20px;
+        margin-bottom:50px;
         // display:flex;
+        // margin-top:50px;
       }
       .form_pass{
         display:none;
@@ -60,16 +63,19 @@
         min-height:30px;
         border-radius:20px;
         // display:flex;
+        margin-bottom:50px;
       }
       .form_pass_conf{
         display:none;
         min-width:100%;
         min-height:30px;
         border-radius:20px;
+        margin-bottom:50px;
         // display:flex;
       }
     }
     .login_btn{
+      display:none;
       min-width:100%;
       border-radius:20px;
     }

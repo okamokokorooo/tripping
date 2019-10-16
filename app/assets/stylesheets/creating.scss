@@ -14,9 +14,10 @@
       label{
         display:flex;
       }
-      .form-btn{
+      .form-title{
         width:300px;
         height:30px;
+        display:none;
       }
       select{
         width:300px;
@@ -25,13 +26,15 @@
       textarea{
         height:300px;
         width:300px;
+        display:none;
       }
       .video_box{
         width:300px;
-        background-color:red;
+        display:none;
       }
     }
     .action_btn{
+      display:none;
       margin-top: 30px;
       width:300px;
       height:60px;

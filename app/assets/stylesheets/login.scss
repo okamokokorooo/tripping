@@ -41,7 +41,28 @@
         display:flex;
 
       }
-      .form_space{
+      .form_name{
+        min-width:100%;
+        min-height:30px;
+        border-radius:20px;
+        // display:flex;
+      }
+      .form_mail{
+        display:none;
+        min-width:100%;
+        min-height:30px;
+        border-radius:20px;
+        // display:flex;
+      }
+      .form_pass{
+        display:none;
+        min-width:100%;
+        min-height:30px;
+        border-radius:20px;
+        // display:flex;
+      }
+      .form_pass_conf{
+        display:none;
         min-width:100%;
         min-height:30px;
         border-radius:20px;

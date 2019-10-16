@@ -1,0 +1,17 @@
+$(function(){
+  $("select").hover(function(){
+    $("#title").fadeIn();
+  })
+  $("#title").keydown(function(){
+    $("#text").fadeIn();
+  })
+  $("#text").keydown(function(){
+    $("#file").fadeIn();
+  })
+  $("#file").hover(function(){
+    $(".action_btn").fadeIn();
+  })
+  $(".action_btn").submit(function(){
+    console.log("ありがとう");
+  })
+})

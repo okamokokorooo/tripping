@@ -11,10 +11,10 @@
         = f.collection_select :genre_id, Genre.all, :id, :name, prompt: "--", class: 'input', id:"selection"
       .field
         %p step2 投稿タイトルを書こう！
-        = f.text_field :title, class: "form-title",id:"title"
+        = f.text_field :title, class: "form-title",id:"title", placeholder:"50文字以内"
       .field
         %p step3 自由に感想を書こう！
-        = f.text_area :text,id:"text"
+        = f.text_area :text,id:"text", placeholder: "1000文字以内"
       .field
         %p step4 写真を載せるとgood!
         = f.file_field :video, class: "video_box", id: "file"

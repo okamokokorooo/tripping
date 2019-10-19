@@ -8,7 +8,8 @@ class Program < ApplicationRecord
     likes.find_by(user_id: user_id)
   end
   is_impressionable
-
+  
   validates :title, length: {maximum: 50} #50文字以下
-  validates :text, length: {maximum: 1000}
+  validates :text, length: {maximum: 1000} #1000文字以下
+  # validates :
 end

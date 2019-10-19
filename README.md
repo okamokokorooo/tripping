@@ -10,6 +10,10 @@ Overview
 ### about
 * 観光地やグルメ情報などを呟くことができるサイトです。
 
+### login_method
+* mail:test1234@gmail.com
+* password: test1234
+
 ### language
 * view: haml/scsss
 * server_side: RubyOnRails

@@ -12,13 +12,13 @@
   }
   .forming{
     .field{
-      label{
-        display:flex;
-      }
+      // label{
+      //   display:flex;
+      // }
       .form-title{
         width:300px;
         height:30px;
-        display:none;
+        // display:none;
       }
       select{
         width:300px;
@@ -27,18 +27,18 @@
       textarea{
         height:300px;
         width:300px;
-        display:none;
+        // display:none;
       }
       .video_box{
         width:300px;
-        display:none;
+        // display:none;
       }
       p{
-        color:g
+        color:gray;
       }
     }
     .action_btn{
-      display:none;
+      // display:none;
       margin-top: 30px;
       width:300px;
       height:60px;
@@ -48,7 +48,7 @@
     }
     p{
       font-size:20px;
-      color:#b701b5;
+      color:gray;
     }
   }
 }

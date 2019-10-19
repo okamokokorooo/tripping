@@ -73,7 +73,7 @@ class ProgramsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     # Never trust parameters from the scary internet, only allow the white list through.
     def program_params
-      params.require(:program).permit(:title,:video,:text, :genre_id, :likes_conut).merge(user_id: current_user.id)
+      params.require(:program).permit(:id,:title,:video,:text, :genre_id, :likes_conut).merge(user_id: current_user.id)
     end
 
     def set_genre

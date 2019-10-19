@@ -12,7 +12,7 @@ $(function(){
     $(".action_btn").fadeIn();
   })
   $(".action_btn").submit(function(){
-    console.log("ありがとう");
+    // console.log("ありがとう");
   })
   $("#name").keydown(function(){
     $("#e_mail").fadeIn();

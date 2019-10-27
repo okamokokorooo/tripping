@@ -4,6 +4,7 @@ class ProgramsController < ApplicationController
   before_action :set_genre
   before_action :set_program, only: [:show]
   impressionist :actions => [:show]
+
   def index
     add_breadcrumb 'ブログ一覧'
     @programs = @genre.programs

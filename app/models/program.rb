@@ -1,5 +1,5 @@
 class Program < ApplicationRecord
-  after_validation :geocode
+  # after_validation :geocode
   mount_uploader :video
   belongs_to :genre
   belongs_to :user

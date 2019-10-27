@@ -19,6 +19,7 @@ class GenresController < ApplicationController
     @genre = Genre.new
   end
 
+  
   # GET /genres/1/edit
   def edit
   end

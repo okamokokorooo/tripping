@@ -7,11 +7,16 @@ class ProgramsController < ApplicationController
   def index
     add_breadcrumb 'ブログ一覧'
     @programs = @genre.programs
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
     # @program = Program.new
     # @program = Program.find(params[:id])
     # binding.pry
     # @tweets = Tweet.includes(:user).page(params[:page]).per(5).order("created_at DESC")
-  end
 
   def show
     add_breadcrumb 'ブログ一覧'
@@ -20,9 +25,9 @@ class ProgramsController < ApplicationController
 
     @programs = @genre.programs
     @program = Program.find(params[:id])
-    def like_user(user_id)
-      likes.find_by(user_id: user_id)
-    end
+    # def like_user(user_id)
+    #   likes.find_by(user_id: user_id)
+    # end
     # binding.pry
     # impressionist(@program, nil, unique: [session_hash])
     # impressionist(@program, nil, unique: [session_hash])
@@ -72,18 +77,18 @@ class ProgramsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     # Never trust parameters from the scary internet, only allow the white list through.
-    def program_params
-      params.require(:program).permit(:id,:title,:video,:text, :genre_id, :likes_conut).merge(user_id: current_user.id)
-    end
+  def program_params
+    params.require(:program).permit(:id,:title,:video,:text, :genre_id, :likes_conut).merge(user_id: current_user.id)
+  end
 
-    def set_genre
-      @genre = Genre.find(params[:genre_id])
-      Time.zone ='Tokyo'
-      # binding.pry
-    end
+  def set_genre
+    @genre = Genre.find(params[:genre_id])
+    Time.zone ='Tokyo'
+    # binding.pry
+  end
 
-    def set_program
-      @program = Program.find(params[:id])
-      # binding.pry
-    end
+  def set_program
+    @program = Program.find(params[:id])
+    # binding.pry
+  end
 end

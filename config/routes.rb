@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :users
   resources :genres do
     resources :programs do
+      resources :programs, only: :index, defaults: { format: "json"}
       resources :likes, only: [:create, :destroy]
     end
   end
